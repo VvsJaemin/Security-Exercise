@@ -23,7 +23,7 @@ public class UserController {
         return ResponseEntity.ok(userService.getMyInfo());
     }
 
-    @GetMapping("/email")
+    @GetMapping("/{email}")
     public ResponseEntity<UserResponseDto> getUserInfo(@PathVariable String email){
         return ResponseEntity.ok(userService.getUserInfo(email));
     }

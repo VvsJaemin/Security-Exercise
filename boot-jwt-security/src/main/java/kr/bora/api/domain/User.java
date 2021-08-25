@@ -27,7 +27,7 @@ public class User {
     private String password;
 
     @Column(name="authority")
-    @Enumerated(EnumType.STRING)
+    @Enumerated(EnumType.STRING) // enum 문자열 자체가 저장(USER, ADMIN 등)
     private Authority authority;
 
     @Builder
